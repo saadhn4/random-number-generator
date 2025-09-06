@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+      body {
+        font-family: "Inter", sans-serif;
+      }
+    </style>
+    <meta charset="UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Random Number</title>
+  </head>
+  <body class="min-h-screen flex flex-col justify-center items-center">
+    <h1 class="text-purple-500 text-2xl font-bold mb-4">
+      Random Number Generator
+    </h1>
+    <div>
+      <label> Starting Number: </label>
+      <input
+        class="js-starting-input outline-0 border border-purple-300 w-[50px] p-1 ml-1"
+        type="number"
+      />
+    </div>
+
+    <div>
+      <label> Ending Number: </label>
+      <input
+        class="js-ending-input outline-0 border border-purple-300 w-[50px] p-1 mt-3 ml-3"
+        type="number"
+      />
+    </div>
+
+    <button
+      class="js-generate-btn my-3 bg-purple-400 hover:bg-purple-300 text-white font-bold p-2 rounded-lg cursor-pointer"
+    >
+      Generate
+    </button>
+    <p class="js-message mt-1">
+      Your number is: <span class="js-random-number font-semibold"></span>
+    </p>
+    <script src="script.js"></script>
+  </body>
+</html>
